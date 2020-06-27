@@ -14,6 +14,10 @@ exports.defaults = async () => {
 		["description", package.description],
 		["author", package.author],
 		["homepageURL", package.repository],
+		[
+			"updateURL",
+			"https://raw.githubusercontent.com/duncannah/better-twitter-redesign/master/dist/better-twitter-redesign.user.css",
+		],
 		["license", package.license],
 		["preprocessor", "default"],
 	];
