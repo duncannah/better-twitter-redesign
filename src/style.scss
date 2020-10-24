@@ -93,11 +93,15 @@ div[data-testid='SideNav_AccountSwitcher_Button'] > div:nth-child(2), div[data-t
 /*** HOME ***/
 
 /* make tweets bigger */
-
 [data-testid='primaryColumn'] > div:first-child > div:last-child {
-    width: 70%;
-    max-width: 750px;
+	width: 100%;
 	margin: auto;
+}
+
+[data-testid='primaryColumn'] > div:first-child > div:last-child > div:last-child {
+	width: 100%;
+	max-width: 900px;
+	align-self: center;
 }
 
 /*** MESSAGES ***/
