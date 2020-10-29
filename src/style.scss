@@ -85,7 +85,7 @@ div[data-testid='SideNav_AccountSwitcher_Button'] > div:nth-child(2), div[data-t
 
 /* remove margin from title */
 
-[data-testid='primaryColumn'] > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child {
+[data-testid='primaryColumn'] > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child {
 	max-width: 100%;
 	margin: 0;
 }
@@ -96,6 +96,7 @@ div[data-testid='SideNav_AccountSwitcher_Button'] > div:nth-child(2), div[data-t
 [data-testid='primaryColumn'] > div:first-child > div:last-child {
 	width: 100%;
 	margin: auto;
+	max-width: unset;
 }
 
 [data-testid='primaryColumn'] > div:first-child > div:last-child > div:last-child {
@@ -127,7 +128,7 @@ div[data-testid='SideNav_AccountSwitcher_Button'] > div:nth-child(2), div[data-t
 	max-width: 100%;
 }
 
-[aria-labelledby='detail-header'] > div:nth-child(2) > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:nth-child(2) {
+[aria-labelledby='detail-header'] > div:nth-child(2) > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:last-child {
 	max-width: 60%;
 }
 
