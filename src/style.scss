@@ -24,7 +24,8 @@ nav[role="navigation"] > * > div:first-child > div[dir="auto"]:last-child {
 }
 
 /* shrink the tweet button */
-a[href="/compose/tweet"][role="button"] {
+a[href="/compose/tweet"][role="button"],
+a[href="/compose/tweet"][role="link"] {
 	width: 45px;
 	min-width: 0;
 	height: 45px;
@@ -32,7 +33,8 @@ a[href="/compose/tweet"][role="button"] {
 	padding: 0;
 }
 
-a[href="/compose/tweet"][role="button"] span {
+a[href="/compose/tweet"][role="button"] span,
+a[href="/compose/tweet"][role="link"] span {
 	font-size: 90%;
 }
 
