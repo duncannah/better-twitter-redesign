@@ -1,30 +1,30 @@
 /*** SIDEBAR ***/
 
 /* shrink it */
-[role='banner'] {
+[role="banner"] {
 	flex-grow: 0;
 }
 
-[role='banner'] > div:first-child {
+[role="banner"] > div:first-child {
 	width: 5.428571429em;
 	align-items: center;
 }
 
-[role='banner'] > div:first-child > div:first-child > div {
+[role="banner"] > div:first-child > div:first-child > div {
 	width: auto;
 }
 
-nav[role='navigation'] > * {
+nav[role="navigation"] > * {
 	width: auto;
 }
 
 /* hide labels */
-nav[role='navigation'] > * > div:first-child > div[dir=auto]:last-child {
+nav[role="navigation"] > * > div:first-child > div[dir="auto"]:last-child {
 	display: none;
 }
 
 /* shrink the tweet button */
-a[href='/compose/tweet'][role='button'] {
+a[href="/compose/tweet"][role="button"] {
 	width: 45px;
 	min-width: 0;
 	height: 45px;
@@ -32,60 +32,74 @@ a[href='/compose/tweet'][role='button'] {
 	padding: 0;
 }
 
-a[href='/compose/tweet'][role='button'] span {
+a[href="/compose/tweet"][role="button"] span {
 	font-size: 90%;
 }
 
-[role='main'] > div:first-child {
+[role="main"] > div:first-child {
 	width: 100%;
 }
 
 /* account switcher */
-div[data-testid='SideNav_AccountSwitcher_Button'] {
-    padding: 4px
+div[data-testid="SideNav_AccountSwitcher_Button"] {
+	padding: 4px;
 }
 
-div[data-testid='SideNav_AccountSwitcher_Button'] > div:nth-child(2), div[data-testid='SideNav_AccountSwitcher_Button'] > div:nth-child(3) {
-    display: none;
+div[data-testid="SideNav_AccountSwitcher_Button"] > div:nth-child(2),
+div[data-testid="SideNav_AccountSwitcher_Button"] > div:nth-child(3) {
+	display: none;
 }
 
 /*** MAIN ***/
 
 /* make it take full space */
 
-[role='main'] > div:first-child > div:nth-child(2) > div:first-child {
+[role="main"] > div:first-child > div:nth-child(2) > div:first-child {
 	width: 100%;
 	max-width: 100%;
 	margin: 0;
 }
 
 /* make the main area bigger and shrink the right sidebar */
-[data-testid='primaryColumn'] {
+[data-testid="primaryColumn"] {
 	max-width: initial;
 
 	flex-shrink: 1;
 }
 
-[data-testid='sidebarColumn'] {
+[data-testid="sidebarColumn"] {
 	width: 300px;
 	max-width: 100%;
 
 	flex-grow: 1;
 }
 
-[data-testid='sidebarColumn'] > div:first-child > div:last-child {
+[data-testid="sidebarColumn"] > div:first-child > div:last-child {
 	width: 300px;
 }
 
 /* shrink searchbar */
 
-[data-testid='sidebarColumn'] > div:first-child > div:last-child > div:first-child > div:first-child > div:first-child > div:first-child {
+[data-testid="sidebarColumn"]
+	> div:first-child
+	> div:last-child
+	> div:first-child
+	> div:first-child
+	> div:first-child
+	> div:first-child {
 	width: 300px;
 }
 
 /* remove margin from title */
 
-[data-testid='primaryColumn'] > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child {
+[data-testid="primaryColumn"]
+	> div:first-child
+	> div:first-child
+	> div:first-child
+	> div:first-child
+	> div:first-child
+	> div:first-child
+	> div:first-child {
 	max-width: 100%;
 	margin: 0;
 }
@@ -93,13 +107,16 @@ div[data-testid='SideNav_AccountSwitcher_Button'] > div:nth-child(2), div[data-t
 /*** HOME ***/
 
 /* make tweets bigger */
-[data-testid='primaryColumn'] > div:first-child > div:last-child {
+[data-testid="primaryColumn"] > div:first-child > div:last-child {
 	width: 100%;
 	margin: auto;
 	max-width: unset;
 }
 
-[data-testid='primaryColumn'] > div:first-child > div:last-child > div:last-child {
+[data-testid="primaryColumn"]
+	> div:first-child
+	> div:last-child
+	> div:last-child {
 	width: 100%;
 	max-width: 900px;
 	align-self: center;
@@ -107,45 +124,68 @@ div[data-testid='SideNav_AccountSwitcher_Button'] > div:nth-child(2), div[data-t
 
 /*** MESSAGES ***/
 
-[role='main'] > div:first-child > div:first-child > div:first-child {
+[role="main"] > div:first-child > div:first-child > div:first-child {
 	max-width: 100%;
 }
 
 /* shrink the messages list */
-[aria-labelledby='master-header'] {
+[aria-labelledby="master-header"] {
 	max-width: 100%;
 	margin: 0;
 }
 
-[aria-labelledby='detail-header'] {
+[aria-labelledby="detail-header"] {
 	width: 80%;
 	max-width: 100%;
 	margin: 0;
 }
 
 /* make the message view bigger */
-[aria-labelledby='detail-header'] > div:nth-child(2) > div:first-child > div:first-child {
+[aria-labelledby="detail-header"]
+	> div:nth-child(2)
+	> div:first-child
+	> div:first-child {
 	max-width: 100%;
 }
 
-[aria-labelledby='detail-header'] > div:nth-child(2) > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:last-child {
+[aria-labelledby="detail-header"]
+	> div:nth-child(2)
+	> div:first-child
+	> div:first-child
+	> div:first-child
+	> div:first-child
+	> div:first-child
+	> div:first-child
+	> div:last-child {
 	max-width: 60%;
 }
 
 /* remove margin from conversation title */
-[aria-labelledby='detail-header'] > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child {
+[aria-labelledby="detail-header"]
+	> div:first-child
+	> div:first-child
+	> div:first-child
+	> div:first-child
+	> div:first-child {
 	max-width: 100%;
 	margin: 0;
 }
 
 /* hide scrollbar on thread selection */
-section[aria-labelledby='master-header'] > div:last-child > div::-webkit-scrollbar {
+section[aria-labelledby="master-header"]
+	> div:last-child
+	> div::-webkit-scrollbar {
 	display: none;
 }
 
 /*** PROFILE ***/
 
 /* make the profile tweets bigger */
-[data-testid='primaryColumn'] > div:first-child > div:first-child > div:last-child > div:first-child > div:last-child {
+[data-testid="primaryColumn"]
+	> div:first-child
+	> div:first-child
+	> div:last-child
+	> div:first-child
+	> div:last-child {
 	max-width: 100%;
 }
