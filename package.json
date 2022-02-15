@@ -10,6 +10,6 @@
 		"build": "node ./build.js"
 	},
 	"devDependencies": {
-		"node-sass": "^7.0.0"
+		"node-sass": "7.0.1"
 	}
 }
